@@ -16,7 +16,7 @@ export default function FlimSection() {
   return (
     <>
     <div className='bg-[black] relative overflow-hidden text-white text-center mb-8'>
-        <div className='grid grid-cols-6 mt-2'>
+        <div className='grid grid-cols-6 mt-28'>
             <img src={flimimg1} alt="" />
             <img src={flimimg2} alt="" />
             <img src={flimimg3} alt="" />
@@ -24,15 +24,15 @@ export default function FlimSection() {
             <img src={flimimg5} alt="" />
             <img src={flimimg6} alt="" />
         </div>
-        <h1 className='text-3xl my-8 font-bold leading-[1.5rem] capitalize'>Premium 4K Video Content Providers for Movies and Channels</h1>
+        <h1 className='md:text-3xl my-8 font-bold text-xl leading-[2rem] capitalize'>High-Definition 4K Streaming Services for Movies and TV Channels unlimited</h1>
         <div className='flex'>
         <div className='grid grid-cols-6 mt-2 transition-transform duration-500 ease-in-out" id="image-carousel"'>
-            <img src={flimimg7} className='w-[252px] h-[355px]' alt="" />
-            <img src={flimimg8} className='w-[252px] h-[355px]' alt="" />
-            <img src={flimimg9} className='w-[252px] h-[355px]' alt="" />
-            <img src={flimimg10} className='w-[252px] h-[355px]' alt="" />
-            <img src={flimimg11} className='w-[252px] h-[355px]' alt="" />
-            <img src={flimimg12} className='w-[252px] h-[355px]' alt="" />
+            <img src={flimimg7} alt="" />
+            <img src={flimimg8} alt="" />
+            <img src={flimimg9} alt="" />
+            <img src={flimimg10} alt="" />
+            <img src={flimimg11} alt="" />
+            <img src={flimimg12} alt="" />
         </div>
         </div>
         

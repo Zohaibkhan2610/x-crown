@@ -28,7 +28,7 @@ let closeMenu=()=> setOpen(!open);
           {links.map((pageLink,index)=>{
             return(
                 <li key={index} className="">
-            <Link to={pageLink.path} className="hover:text-sky-500 py-7 text-white px-3 inline-block">
+            <Link to={pageLink.path} className="hover:text-[red] py-7 text-white px-3 inline-block">
               {pageLink.name}
             </Link>
           </li>
@@ -63,7 +63,7 @@ let closeMenu=()=> setOpen(!open);
           {links.map((pageLink,index)=>{
             return(
                 <li key={index} onClick={closeMenu}>
-            <Link to={pageLink.path} className="duration-500 text-lg hover:text-blue-700 font-black text-white py-2 px-3 inline-flex">
+            <Link to={pageLink.path} className="duration-500 text-lg hover:text-[red] font-black text-white py-2 px-3 inline-flex">
               {pageLink.name}
             </Link>
           </li>
