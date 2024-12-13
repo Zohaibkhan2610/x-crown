@@ -1,4 +1,5 @@
 import React from 'react'
+
 import flimimg1 from './Flim Images/Flim1.jpg'
 import flimimg2 from './Flim Images/Flim2.jpg'
 import flimimg3 from './Flim Images/Flim3.jpg'
@@ -15,7 +16,7 @@ export default function FlimSection() {
     
   return (
     <>
-    <div className='bg-[black] relative overflow-hidden text-white text-center mb-8'>
+    <div className='bg-[black] relative overflow-hidden text-white text-center'>
         <div className='grid grid-cols-6 mt-28'>
             <img src={flimimg1} alt="" />
             <img src={flimimg2} alt="" />
@@ -25,15 +26,21 @@ export default function FlimSection() {
             <img src={flimimg6} alt="" />
         </div>
         <h1 className='md:text-3xl my-8 font-bold text-xl leading-[2rem] capitalize'>High-Definition 4K Streaming Services for Movies and TV Channels unlimited</h1>
-        <div className='flex'>
-        <div className='grid grid-cols-6 mt-2 transition-transform duration-500 ease-in-out" id="image-carousel"'>
-            <img src={flimimg7} alt="" />
-            <img src={flimimg8} alt="" />
-            <img src={flimimg9} alt="" />
-            <img src={flimimg10} alt="" />
-            <img src={flimimg11} alt="" />
-            <img src={flimimg12} alt="" />
-        </div>
+        <div className='flex mb-20'>
+        <div className='flex rotate-animation'>
+            <img src={flimimg7} className='w-[16.66%]' alt="" />
+            <img src={flimimg8} className='w-[16.66%]' alt="" />
+            <img src={flimimg9} className='w-[16.66%]' alt="" />
+            <img src={flimimg10} className='w-[16.66%]' alt="" />
+            <img src={flimimg11} className='w-[16.66%]' alt="" />
+            <img src={flimimg12} className='w-[16.66%]' alt="" />
+            <img src={flimimg7} className='w-[16.66%]' alt="" />
+            <img src={flimimg8} className='w-[16.66%]' alt="" />
+            <img src={flimimg9} className='w-[16.66%]' alt="" />
+            <img src={flimimg10} className='w-[16.66%]' alt="" />
+            <img src={flimimg11} className='w-[16.66%]' alt="" />
+            <img src={flimimg12} className='w-[16.66%]' alt="" />
+            </div>
         </div>
         
     </div>
