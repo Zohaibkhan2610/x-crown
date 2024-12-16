@@ -85,39 +85,39 @@ export default function Cards() {
             </div>
 
             <Cards2 />
-            <div className="bg-black px-6 flex flex-col items-center justify-center">
-                <div className='pt-6'>
+            <div className="bg-black px-6 flex flex-col items-center justify-center text-center">
+                <div className='pt-6 text-center font-serif font-bold'>
                 <h1 className='capitalize text-[2rem] text-white'>Get the best iPTV service on x-crown</h1>
-                <h3 className='text-[1.17rem]'>No Desire for buffering and Frezzers?</h3>
+                <h3 className='text-[1.17rem] text-white'>No Desire for buffering and Frezzers?</h3>
                 </div>
-                <div className=" grid md:grid-cols-3 grid-cols-1 gap-5 w-[80%] mb-10">
+                <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-[80%] mb-10">
                     <CardModula
-                    label={<FontAwesomeIcon icon={faClock}/>}
+                    label={<FontAwesomeIcon className='h-12' icon={faClock}/>}
                     title={'Instant Activation'}
                     para={'Enjoy your fully activated IPTV Service once your payment is confirmed.'}/>
                     
                     <CardModula
-                    label={<FontAwesomeIcon icon={faServer}/>}
+                    label={<FontAwesomeIcon className='h-12' icon={faServer}/>}
                     title={'Work on all devices'}
                     para={'Enjoy your favorite shows and channels, anywhere, anytime.'}
                     />
                     <CardModula
-                    label={<FontAwesomeIcon icon={faSatelliteDish}/>}
+                    label={<FontAwesomeIcon className='h-12' icon={faSatelliteDish}/>}
                     title={'watching live tv with zero effort!'}
                     para={'Over +25,000 live TV channels and +30,000 movies and +20,000 TV shows on demand.'}
                     />
                     <CardModula
-                    label={<FontAwesomeIcon icon={faHdd}/>}
+                    label={<FontAwesomeIcon className='h-12' icon={faHdd}/>}
                     title={'Most stable server'}
                     para={'With a fleet of over 100 high-performance servers, you can be confident in their stability and reliability.'}
                     />
                     <CardModula
-                    label={<FontAwesomeIcon icon={faThumbsUp}/>}
+                    label={<FontAwesomeIcon className='h-12' icon={faThumbsUp}/>}
                     title={'free intallation'}
                     para={'Our free installation guide covers every step.'}
                     />
                     <CardModula
-                    label={<FontAwesomeIcon icon={faWifi3}/>}
+                    label={<FontAwesomeIcon className='h-12' icon={faWifi3}/>}
                     title={'Super Quality'}
                     para={'HD & 4K channels, smooth streaming, daily updates.'}
                     />
