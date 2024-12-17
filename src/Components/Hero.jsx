@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Hero1 from './Images/hero background.jpg'
 import './HeroSection.css'
 export default function HeroSection() {
   const [text, setText] = useState('');
@@ -24,7 +23,7 @@ export default function HeroSection() {
           <div class="mx-auto w-[100%] text-center"
           >
             <h1
-              class="bg-gradient-to-r mt-[-6.25rem] from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent sm:text-5xl flex flex-col md:text-7xl"
+              class="bg-gradient-to-r mt-[-6.25rem] from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent sm:text-4xl flex flex-col md:text-7xl "
             >
               The Most Stable and Reliable <p>X{text} </p>
               <span class="sm:block"> IPTV Service in the World </span>

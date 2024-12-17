@@ -25,7 +25,7 @@ export default function FlimSection() {
             <img src={flimimg5} alt="" />
             <img src={flimimg6} alt="" />
         </div>
-        <h1 className='md:text-3xl my-8 font-bold text-xl leading-[2rem] capitalize'>High-Definition 4K Streaming Services for Movies and TV Channels unlimited</h1>
+        <h1 className='md:text-3xl my-8 font-bold text-xl leading-[2rem] capitalize mx-2'>High-Definition 4K Streaming Services for Movies and TV Channels unlimited</h1>
         <div className='flex mb-20'>
         <div className='flex rotate-animation'>
             <img src={flimimg7} className='w-[16.66%]' alt="" />

@@ -85,12 +85,12 @@ export default function Cards() {
             </div>
 
             <Cards2 />
-            <div className="bg-black px-6 flex flex-col items-center justify-center text-center">
+            <div className="bg-black md:px-6 flex flex-col items-center justify-center text-center">
                 <div className='pt-6 text-center font-serif font-bold'>
                 <h1 className='capitalize text-[2rem] text-white'>Get the best iPTV service on x-crown</h1>
                 <h3 className='text-[1.17rem] text-white'>No Desire for buffering and Frezzers?</h3>
                 </div>
-                <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-[80%] mb-10">
+                <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-2 grid-cols-1 md:w-[100%] mb-10">
                     <CardModula
                     label={<FontAwesomeIcon className='h-12' icon={faClock}/>}
                     title={'Instant Activation'}
