@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Navbar from './Components/Navbar/Navbar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FrreTrail from './Components/Registration/FrreTrail';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
       <Route path='/' Component={Home}/>
+      <Route path='/FreeTrail' Component={FrreTrail}/>
       </Routes>
     </Router>
   );

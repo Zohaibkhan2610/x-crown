@@ -8,7 +8,7 @@ const Navbar = () => {
   let links = [
     { name: "Home", path: "/" },
     { name: "Pricing", path: "/Pricing" },
-    { name: "Contact", path: "/Contact" },
+    { name: "Contact", path: "/FreeTrail" },
     { name: "Setup", path: "/Setup" },
 ]
 let closeMenu=()=> setOpen(!open);
@@ -39,10 +39,10 @@ let closeMenu=()=> setOpen(!open);
         <div class="flip-card w-52 h-16 overflow-hidden">
   <div class="flip-card-inner ">
     <div class="flip-card-front border border-[red] rounded-full">
-      <button className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</button>
+      <Link to='/FreeTrail' className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</Link>
     </div>
     <div class="flip-card-back bg-[yellow] border-[black] rounded-full">
-    <button className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</button>
+    <Link to='/FreeTrail' className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</Link>
     </div>
   </div>
 </div>
@@ -71,12 +71,12 @@ let closeMenu=()=> setOpen(!open);
           })}
             <div class="mt-8 flex flex-wrap justify-center gap-4">
             <div class="flip-card w-52 h-16 overflow-hidden">
-  <div class="flip-card-inner">
+            <div class="flip-card-inner ">
     <div class="flip-card-front border border-[red] rounded-full">
-      <button className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</button>
+      <Link to='/FreeTrail' className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</Link>
     </div>
-    <div class="flip-card-back hover:bg-[yellow] border-[black] rounded-full">
-    <button className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</button>
+    <div class="flip-card-back bg-[yellow] border-[black] rounded-full">
+    <Link to='/FreeTrail' className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</Link>
     </div>
   </div>
 </div>

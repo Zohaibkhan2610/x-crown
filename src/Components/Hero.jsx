@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './HeroSection.css'
+import { Link } from 'react-router-dom';
 export default function HeroSection() {
   const [text, setText] = useState('');
   const fullText = '-Crown';
@@ -36,14 +37,14 @@ export default function HeroSection() {
 
             <div class="mt-16 flex flex-wrap justify-center gap-4">
               <div class="flip-card w-72 h-16 overflow-hidden">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front border border-[red] rounded-full">
-                    <button className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</button>
-                  </div>
-                  <div class="flip-card-back border-[black] rounded-full">
-                    <button className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</button>
-                  </div>
-                </div>
+              <div class="flip-card-inner ">
+    <div class="flip-card-front border border-[red] rounded-full">
+      <Link to='/FreeTrail' className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</Link>
+    </div>
+    <div class="flip-card-back bg-[yellow] border-[black] rounded-full">
+    <Link to='/FreeTrail' className='w-full h-full flex text-clip items-center justify-center text-2xl font-bold'>Free trail</Link>
+    </div>
+  </div>
               </div>
             </div>
           </div>
