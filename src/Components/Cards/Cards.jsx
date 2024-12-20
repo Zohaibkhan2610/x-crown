@@ -3,84 +3,18 @@ import { faClock, faHdd, faThumbsUp } from '@fortawesome/free-regular-svg-icons'
 import { faSatelliteDish, faServer, faWifi3 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Cards2 from './Cards2'
-import CardModula from './CardModula'
+import { CardModula, CardModula2 } from './CardModula'
 export default function Cards() {
     return (
         <>
             <div className="w-[100%] bg-black inline-flex justify-center items-center">
-                <div className="px-4 grid md:grid-cols-4 gap-4 sm:grid-cols-2 grid-cols-1 w-fit h-fit justify-evenly bg-black">
-                    <div className="my-8 backdrop-blur-sm bg-white/25 text-white p-5 rounded-lg shadow-lg text-center w-[100%] mx-auto border-[2px] border-transparent duration-200 hover:border-orange-400">
-                        <div className="text-3xl font-bold mb-2">3 MONTHS</div>
-                        <div className="text-4xl font-bold text-orange-400 mb-5">$29.99</div>
-                        <div className="mb-5">
-                            <ul className="list-none p-0 m-0 text-left md:text-[1rem] sm:text-lg text-[0.700rem]">
-                                <li className="mb-1">&#10004; Unbeatable Variety of Channels</li>
-                                <li className="mb-1">&#10004; A Treasure Trove of Movies & Series</li>
-                                <li className="mb-1">&#10004; Exceptional Picture Quality</li>
-                                <li className="mb-1">&#10004; Comprehensive TV Guide</li>
-                                <li className="mb-1">&#10004; Cutting-Edge Technology</li>
-                                <li className="mb-1">&#10004; Seamless Updates</li>
-                                <li className="mb-1">&#10004; Universal Compatibility</li>
-                                <li className="mb-1">&#10004; Premium Sports Packages</li>
-                                <li className="mb-1">&#10004; Exceptional Customer Support</li>
-                            </ul>
-                        </div>
-                        <button className="bg-orange-400 text-white px-4 py-2 rounded-md cursor-pointer font-medium">ENROLL NOW</button>
-                    </div>
-                    <div className="my-8 backdrop-blur-sm bg-white/25 text-white p-5 rounded-lg shadow-lg text-center w-[100%] mx-auto border-[2px] border-transparent duration-200 hover:border-orange-400">
-                        <div className="text-3xl font-bold mb-2">3 MONTHS</div>
-                        <div className="text-4xl font-bold text-orange-400 mb-5">$29.99</div>
-                        <div className="mb-5">
-                            <ul className="list-none p-0 m-0 text-left md:text-[1rem] sm:text-lg text-[0.700rem]">
-                                <li className="mb-1">&#10004; Unbeatable Variety of Channels</li>
-                                <li className="mb-1">&#10004; A Treasure Trove of Movies & Series</li>
-                                <li className="mb-1">&#10004; Exceptional Picture Quality</li>
-                                <li className="mb-1">&#10004; Comprehensive TV Guide</li>
-                                <li className="mb-1">&#10004; Cutting-Edge Technology</li>
-                                <li className="mb-1">&#10004; Seamless Updates</li>
-                                <li className="mb-1">&#10004; Universal Compatibility</li>
-                                <li className="mb-1">&#10004; Premium Sports Packages</li>
-                                <li className="mb-1">&#10004; Exceptional Customer Support</li>
-                            </ul>
-                        </div>
-                        <button className="bg-orange-400 text-white px-4 py-2 rounded-md cursor-pointer font-medium">ENROLL NOW</button>
-                    </div>
-                    <div className="my-8 backdrop-blur-sm bg-white/25 text-white p-5 rounded-lg shadow-lg text-center w-[100%] mx-auto border-[2px] border-transparent duration-200 hover:border-orange-400">
-                        <div className="text-3xl font-bold mb-2">3 MONTHS</div>
-                        <div className="text-4xl font-bold text-orange-400 mb-5">$29.99</div>
-                        <div className="mb-5">
-                            <ul className="list-none p-0 m-0 text-left md:text-[1rem] sm:text-lg text-[0.700rem]">
-                                <li className="mb-1">&#10004; Unbeatable Variety of Channels</li>
-                                <li className="mb-1">&#10004; A Treasure Trove of Movies & Series</li>
-                                <li className="mb-1">&#10004; Exceptional Picture Quality</li>
-                                <li className="mb-1">&#10004; Comprehensive TV Guide</li>
-                                <li className="mb-1">&#10004; Cutting-Edge Technology</li>
-                                <li className="mb-1">&#10004; Seamless Updates</li>
-                                <li className="mb-1">&#10004; Universal Compatibility</li>
-                                <li className="mb-1">&#10004; Premium Sports Packages</li>
-                                <li className="mb-1">&#10004; Exceptional Customer Support</li>
-                            </ul>
-                        </div>
-                        <button className="bg-orange-400 text-white px-4 py-2 rounded-md cursor-pointer font-medium">ENROLL NOW</button>
-                    </div>
-                    <div className="my-8 backdrop-blur-sm bg-white/25 text-white p-5 rounded-lg shadow-lg text-center w-[100%] mx-auto border-[2px] border-transparent duration-200 hover:border-orange-400">
-                        <div className="text-3xl font-bold mb-2">3 MONTHS</div>
-                        <div className="text-4xl font-bold text-orange-400 mb-5">$29.99</div>
-                        <div className="mb-5">
-                            <ul className="list-none p-0 m-0 text-left md:text-[1rem] sm:text-lg text-[0.700rem]">
-                                <li className="mb-1">&#10004; Unbeatable Variety of Channels</li>
-                                <li className="mb-1">&#10004; A Treasure Trove of Movies & Series</li>
-                                <li className="mb-1">&#10004; Exceptional Picture Quality</li>
-                                <li className="mb-1">&#10004; Comprehensive TV Guide</li>
-                                <li className="mb-1">&#10004; Cutting-Edge Technology</li>
-                                <li className="mb-1">&#10004; Seamless Updates</li>
-                                <li className="mb-1">&#10004; Universal Compatibility</li>
-                                <li className="mb-1">&#10004; Premium Sports Packages</li>
-                                <li className="mb-1">&#10004; Exceptional Customer Support</li>
-                            </ul>
-                        </div>
-                        <button className="bg-orange-400 text-white px-4 py-2 rounded-md cursor-pointer font-medium">ENROLL NOW</button>
-                    </div>
+                <div className="px-4 grid xl:grid-cols-4 gap-4 sm:grid-cols-2 grid-cols-1 w-fit h-fit justify-evenly bg-black">
+                    
+                    <CardModula2 Time='1 Month' price='25'/>
+                    <CardModula2 Time='3 Months' price='50'/>
+                    <CardModula2 Time='6 Months' price='75'/>
+                    <CardModula2 Time='1 Year' price='90'/>
+
                 </div>
             </div>
 

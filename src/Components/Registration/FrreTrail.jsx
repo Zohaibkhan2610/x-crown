@@ -45,17 +45,18 @@ export default function FreeTrail() {
 
   return (
     <>
-      <div className='bg-gradient-to-tl to-blue-400 from-slate-300 h-72 pt-[2%]'>
-        <h1 className='text-[100px] font-serif font-bold text-left ml-[5%]'>Free Trail</h1>
+      <div className='bg-gradient-to-tl to-blue-400 from-slate-300 pt-[2%]text-c
+       '>
+        <h1 className='lg:text-8xl pt-6 md:text-left text-center text-2xl font-serif font-bold ml-[5%]'>X-Crown IPTV Free Trail</h1>
       </div>
-      <div className='bg-gradient-to-tl to-blue-400 from-slate-300 inline-flex w-full pt-8'>
-        <div className='w-[48%]'>
+      <div className='bg-gradient-to-tl to-blue-400 from-slate-300 inline-flex md:flex-row flex-col w-full pt-8'>
+        <div className='md:w-[48%]'>
           <img src={FormImg} alt="" />
         </div>
-        <div className='w-[48%] capitalize'>
+        <div className='md:w-[48%] capitalize px-[3%] mb-8'>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+              <label htmlFor="name" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Name</label>
               <input
                 type="text"
                 id="name"
@@ -67,7 +68,7 @@ export default function FreeTrail() {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
+              <label htmlFor="email" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Email</label>
               <input
                 type="email"
                 id="email"
@@ -79,7 +80,7 @@ export default function FreeTrail() {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="phoneNumber" className="block text-gray-700 font-bold mb-2">Whatsapp (Phone Number)</label>
+              <label htmlFor="phoneNumber" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Whatsapp (Phone Number)</label>
               <input
                 type="tel"
                 id="phoneNumber"
@@ -91,8 +92,8 @@ export default function FreeTrail() {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="device" className="block text-gray-700 font-bold mb-2">Choose the right device:</label>
-              <select id="device" name="device" value={formData.device} onChange={handleChange} required>
+              <label htmlFor="device" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Choose the right device:</label>
+              <select id="device" name="device" value={formData.device} onChange={handleChange} required className='w-full'>
                 <option value="">Select a device</option>
                 <option value="amazon-fire-stick">Amazon Fire Stick</option>
                 <option value="smart-tv">Smart TV</option>
@@ -105,29 +106,31 @@ export default function FreeTrail() {
               </select>
             </div>
             <div className="mb-4">
-              <label>Customize Channels:</label>
+              <label className="block text-gray-700 font-bold label-margin-bottom">Customize Channels:</label>
               <br />
-              <input type="checkbox" id="only-english" name="onlyEnglish" checked={formData.onlyEnglish} onChange={handleChange} />
-              <label htmlFor="only-english">Only English channels</label>
-              <br />
-              <input type="checkbox" id="american" name="american" checked={formData.american} onChange={handleChange} />
-              <label htmlFor="american">American</label>
-              <br />
-              <input type="checkbox" id="european" name="european" checked={formData.european} onChange={handleChange} />
-              <label htmlFor="european">European</label>
-              <br />
-              <input type="checkbox" id="arabian" name="arabian" checked={formData.arabian} onChange={handleChange} />
-              <label htmlFor="arabian">Arabian</label>
-              <br />
-              <input type="checkbox" id="asian" name="asian" checked={formData.asian} onChange={handleChange} />
-              <label htmlFor="asian">Asian</label>
-              <br />
-              <input type="checkbox" id="other-channels" name="otherChannels" checked={formData.otherChannels} onChange={handleChange} />
-              <label htmlFor="other-channels">Other</label>
-              <br />
+              <div className="flex flex-wrap gap-4">
+                <input type="checkbox" id="only-english" name="onlyEnglish" checked={formData.onlyEnglish} onChange={handleChange} />
+                <label htmlFor="only-english">Only English channels</label>
+                <br />
+                <div className="flex gap-[30%]"><input type="checkbox" id="american" name="american" checked={formData.american} onChange={handleChange} />
+                <label htmlFor="american">American</label></div>
+                <br />
+                <div className="flex gap-[30%]"><input type="checkbox" id="european" name="european" checked={formData.european} onChange={handleChange} />
+                <label htmlFor="european">European</label></div>
+                <br />
+                <div className='flex gap-[30%]'><input type="checkbox" id="arabian" name="arabian" checked={formData.arabian} onChange={handleChange} />
+                <label htmlFor="arabian">Arabian</label></div>
+                <br />
+                <div className='flex gap-[30%]'><input type="checkbox" id="asian" name="asian" checked={formData.asian} onChange={handleChange} />
+                <label htmlFor="asian">Asian</label></div>
+                <br />
+                <div className='flex gap-[30%]'><input type="checkbox" id="other-channels" name="otherChannels" checked={formData.otherChannels} onChange={handleChange} />
+                <label htmlFor="other-channels">Other</label></div>
+                <br />
+              </div>
             </div>
             <div className="mb-4">
-              <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
+              <label htmlFor="message" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Message</label>
               <textarea
                 id="message"
                 name="message"
