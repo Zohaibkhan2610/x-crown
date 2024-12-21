@@ -8,7 +8,7 @@ const Navbar = () => {
   let links = [
     { name: "Home", path: "/" },
     { name: "Pricing", path: "/Pricing" },
-    { name: "Contact", path: "/FreeTrail" },
+    { name: "Contact", path: "/Contact" },
     { name: "Setup", path: "/Setup" },
 ]
 let closeMenu=()=> setOpen(!open);
