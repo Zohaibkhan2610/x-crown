@@ -54,6 +54,13 @@ export default function Contact() {
         <div className='md:w-[48%]'>
           <img src={FormImg} alt="" />
         </div>
+
+
+
+        {/* Form data */}
+
+
+        
         <div className='md:w-[48%] capitalize px-[3%] mb-8'>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
