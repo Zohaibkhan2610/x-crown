@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 import FormImg from './Image.png'; // Ensure the path is correct
-
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -15,11 +16,13 @@ export default function Contact() {
     otherChannels: false,
     message: '', // Add a state for the message area
   });
+  const [phone, setPhone] = useState('');
+
 
   const handleChange = (e) => {
     const { name, type, value, checked } = e.target;
     setFormData({
-      ...formData,
+      ...formData,phoneNumber: phone,
       [name]: type === 'checkbox' ? checked : value,
     });
   };
@@ -56,7 +59,6 @@ export default function Contact() {
         </div>
 
 
-
         {/* Form data */}
 
 
@@ -89,15 +91,13 @@ export default function Contact() {
             </div>
             <div className="mb-4">
               <label htmlFor="phoneNumber" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Whatsapp (Phone Number)</label>
-              <input
-                type="tel"
-                id="phoneNumber"
+              <PhoneInput
+              id="phoneNumber"
                 name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                required
-              />
+        defaultCountry="ua"
+        onChange={(value) => setPhone(value)}
+        required
+      />
             </div>
             <div className="mb-4">
               <label htmlFor="device" className="block text-gray-700 font-bold mb-2 label-margin-bottom">Choose the right device:</label>
